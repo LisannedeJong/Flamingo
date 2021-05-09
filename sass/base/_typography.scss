@@ -1,0 +1,112 @@
+.primaryh1 {
+  color: $color-light;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 2rem;
+
+  .primary {
+    &--main {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1.2rem;
+      animation-name: moveInLeft;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+    }
+    &--sub {
+      display: block;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 1.1rem;
+      animation-name: moveInRight;
+      animation-duration: 2s;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+
+.secundary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-dark
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    transform: skewY(0.4deg) skewX(1deg) scale(1.05);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-primary-dark, 0.3);
+  }
+}
+
+.quaternary {
+  font-size: $font-big;
+  color: $color-light-grey;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 1.2;
+}
+
+.tertiary {
+  font-size: $def-font;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $font-small;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  &--two {
+    margin-bottom: 1rem;
+  }
+}
+
+body {
+  font-family: "Merriweather", Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: $color-light;
+  color: $color-primary-dark;
+}
+
+footer {
+  text-align: center;
+  background-color: $color-primary-light;
+  height: 1.1rem;
+  font-size: 0.7rem;
+  margin-top: 2.5rem;
+}
+
+hr {
+  border-width: 0;
+  height: 0.2rem;
+  background-color: $color-primary-light;
+  margin-bottom: 1rem;
+}
+
+html {
+  font-size: 1rem;
+}
+
+.about {
+  display: inline;
+  font-size: 2rem;
+  font-family: Verdana, sans-serif;
+  color: $color-dark;
+}
+
+.fav {
+  height: 2rem;
+}

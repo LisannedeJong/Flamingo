@@ -1,0 +1,17 @@
+{
+  "name": "flamingos",
+  "version": "1.0.0",
+  "description": "landing page for flamingos",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "author": "Lisanne de Jong",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}

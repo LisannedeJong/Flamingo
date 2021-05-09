@@ -1,0 +1,30 @@
+.feature-box {
+  background-color: rgba($color-light, 0.7);
+  font-size: $font-small;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  height: 14rem;
+  transition: transform 0.3s;
+  width: 14.4vw;
+  float: none;
+
+  &:not(:last-child) {
+    margin-right: calc(#{$gutter-horizontal} / 4);
+  }
+
+  &:hover {
+    transform: translateY(-0.6rem) scale(1.03);
+  }
+  &__icon {
+    font-size: $font-big;
+    background-image: linear-gradient(
+      to right,
+      $color-primary,
+      $color-primary-dark
+    );
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}

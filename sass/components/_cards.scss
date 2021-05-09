@@ -1,0 +1,162 @@
+.card {
+  //   perspective: 150rem;
+  //   -moz-perspective: 150rem;
+  position: relative;
+  height: 30rem;
+
+  &__side {
+    height: 30rem;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+    box-shadow: $shadow;
+    overflow: hidden;
+
+    &--front {
+      background-color: $color-light-grey;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.7),
+          rgba($color-primary, 0.7)
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secundary, 0.7),
+          rgba($color-secundary-dark, 0.7)
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary, 0.7),
+          rgba($color-tertiary-dark, 0.7)
+        );
+      }
+    }
+  }
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 30vh;
+    background-blend-mode: screen;
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.85),
+          rgba($color-primary, 0.85)
+        ),
+        url(../IMG/flamingo5.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secundary, 0.85),
+          rgba($color-secundary-dark, 0.85)
+        ),
+        url(../IMG/flamingo4.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-tertiary, 0.85),
+          rgba($color-tertiary-dark, 0.85)
+        ),
+        url(../IMG/flam1.jpg);
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    bottom: 19rem;
+    right: 0.7rem;
+  }
+  &__heading-span {
+    padding: 0 0.5rem;
+    &--1 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($color-primary-light, 0.7),
+        rgba($color-primary, 0.7)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secundary, 0.7),
+        rgba($color-secundary-dark, 0.7)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary, 0.7),
+        rgba($color-tertiary-dark, 0.7)
+      );
+    }
+  }
+  &__details {
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 3rem auto;
+
+      li {
+        text-align: center;
+        font-size: $font-small;
+        padding: 0.3rem;
+
+        &:not(:last-child) {
+          border-bottom: 0.1rem solid $color-grey;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+  }
+
+  &__price-box {
+    margin-bottom: 4rem;
+    color: white;
+  }
+
+  &__price-only {
+    font-size: $font-small;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: $font-huge;
+    font-weight: 100;
+  }
+}

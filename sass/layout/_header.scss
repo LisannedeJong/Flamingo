@@ -1,0 +1,36 @@
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.74),
+      rgba($color-primary, 0.74)
+    ),
+    url(../IMG/flamo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__headerbox {
+    text-align: center;
+    position: relative;
+    top: 12rem;
+    box-sizing: border-box;
+  }
+
+  &__logobox {
+    position: absolute;
+    top: 2rem;
+    left: 1.2rem;
+  }
+
+  &__logo {
+    width: 3rem;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      width: 3rem;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.section-about {
+  background-color: darken($color-light, 1.2);
+  padding: 2rem 2rem 4rem;
+}
+
+.section-features {
+  padding: 10rem 2rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-light, 0.74),
+      rgba($color-primary, 0.74)
+    ),
+    url(../IMG/flamingo3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  margin-top: -3.5rem;
+  transform: skewY(-4deg);
+
+  & > * {
+    transform: skewY(4deg);
+  }
+}
+
+.section-course {
+  background-color: darken($color-light, 1.2);
+  padding: 4rem 2rem 4rem 2rem;
+  margin-top: -3.5rem;
+}
+
+.section-stories {
+  padding: 1rem 0 10rem;
+  background-color: darken($color-light, 0.9);
+}
