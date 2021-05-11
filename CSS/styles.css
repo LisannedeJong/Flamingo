@@ -104,8 +104,7 @@ footer {
   text-align: center;
   background-color: #eeb9c7;
   height: 1.1rem;
-  font-size: 0.7rem;
-  margin-top: 2.5rem; }
+  font-size: 0.7rem; }
 
 hr {
   border-width: 0;
@@ -216,7 +215,7 @@ html {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.4), 0 2rem 4rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
     overflow: hidden; }
     .card__side--front {
       background-color: #f7f7f7; }
@@ -331,9 +330,9 @@ html {
 
 .story {
   width: 75%;
-  margin: 1rem auto;
-  box-shadow: rgba(0, 0, 0, 0.4), 0 2rem 4rem;
-  background-color: #f1eef7;
+  margin: 2rem auto;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  background-color: rgba(241, 238, 247, 0.4);
   border-radius: 3px;
   padding: 3rem;
   padding-left: 9rem;
@@ -376,6 +375,19 @@ html {
     filter: blur(0.1rem) brightness(90%); }
     .story:hover .story__img--2 {
       transform: translateY(0.5rem) scale(1.1); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.25; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
@@ -443,4 +455,4 @@ html {
 
 .section-stories {
   padding: 1rem 0 5rem;
-  background-color: #eeebf6; }
+  position: relative; }

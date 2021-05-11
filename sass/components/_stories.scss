@@ -1,8 +1,8 @@
 .story {
   width: 75%;
-  margin: 1rem auto;
+  margin: 2rem auto;
   box-shadow: $shadow;
-  background-color: $color-light;
+  background-color: rgba($color-light, 0.4);
   border-radius: 3px;
   padding: 3rem;
   padding-left: 9rem;
@@ -23,7 +23,6 @@
 
   &__img {
     height: 100%;
-    // backface-visibility: hidden;
 
     &--1 {
       transform: scale(1.2);
