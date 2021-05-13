@@ -23,6 +23,7 @@
 
   &__img {
     height: 100%;
+    transition: all 0.5s ease;
 
     &--1 {
       transform: scale(1.2);
@@ -56,6 +57,7 @@
   }
 
   &:hover &__img {
+    transition: all 0.5s ease;
     transform: scale(1.1);
     filter: blur(0.1rem) brightness(90%);
 
