@@ -1,15 +1,20 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-decoration: none;
     opacity: 0.5;
     text-transform: uppercase;
     padding: 0.5rem 2rem;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
     position: relative;
     font-size: 1rem;
     border-radius: 0.3rem;
     margin-top: 1rem;
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     padding: 0.7rem 2.3rem;
@@ -17,10 +22,25 @@
     opacity: 1;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     transform: translateY(0.2rem);
+    outline: none;
   }
 
+  &--primary {
+    background-color: $color-primary;
+    display: inline-block;
+    opacity: 0.7;
+    color: $color-primary-dark;
+
+    &:hover {
+      box-shadow: 0.5rem 0.4rem 0.6rem rgba($color-primary, 0.6);
+    }
+    &:active {
+      box-shadow: 0.3rem 0.2rem 0.3rem rgba($color-primary, 0.9);
+    }
+  }
   &--white {
     background-color: $color-light;
     display: inline-block;
