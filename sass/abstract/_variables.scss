@@ -3,6 +3,7 @@ $color-primary-light: #eeb9c7;
 $color-primary-dark: #533332;
 
 $color-light: #f1eef7;
+$color-dark-1: #444;
 $color-dark: #000;
 $color-light-grey: #f7f7f7;
 
@@ -17,6 +18,7 @@ $color-tertiary: #8e9f91;
 $color-tertiary-dark: #406647;
 
 $shadow: 0 2rem 4rem rgba($color-dark, 0.4);
+$shadow-link: 0 1rem 2rem rgba($color-dark, 0.3);
 
 //Grid
 $grid-width: 114rem;
@@ -28,6 +30,7 @@ $background: #d6a;
 
 //Font sizes
 $font-huge: 4rem;
+$font-medium: 3rem;
 $font-big: 2rem;
 $def-font: 1.6rem;
 $font-small: 1rem;

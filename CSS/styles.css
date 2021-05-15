@@ -41,18 +41,19 @@ body {
   color: #f1eef7;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
   .primaryh1 .primary--main {
     display: block;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     letter-spacing: 1.2rem;
     animation-name: moveInLeft;
     animation-duration: 2s;
-    animation-timing-function: ease-out; }
+    animation-timing-function: ease-out;
+    margin-bottom: 1rem; }
   .primaryh1 .primary--sub {
     display: block;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 1.1rem;
     animation-name: moveInRight;
@@ -100,12 +101,6 @@ body {
   line-height: 1.5;
   background-color: #f1eef7;
   color: #533332; }
-
-footer {
-  text-align: center;
-  background-color: #eeb9c7;
-  height: 1.1rem;
-  font-size: 0.7rem; }
 
 hr {
   border-width: 0;
@@ -489,7 +484,8 @@ html {
   background-image: linear-gradient(to right, rgba(238, 185, 199, 0.74), rgba(197, 100, 97, 0.74)), url(../IMG/flamo.jpg);
   background-size: cover;
   background-position: center;
-  position: relative; }
+  position: relative;
+  border-radius: 1rem 1rem 0 0; }
   .header__headerbox {
     text-align: center;
     position: relative;
@@ -526,6 +522,54 @@ html {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-1-of-4 {
     width: calc((100% - 4 * 6rem) / 4); }
+
+.footer {
+  background-color: #444;
+  padding: 2rem 2rem;
+  font-size: 0.8rem;
+  color: #c4c4c4; }
+  .footer__copyright {
+    border-top: 0.1rem solid #999;
+    padding-top: 0.3rem;
+    display: inline-block;
+    margin-left: 1.5rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 1.5rem; }
+  .footer__logo {
+    width: 4rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 0.1rem solid #999;
+    padding-top: 0.3rem;
+    margin-right: 1.5rem;
+    text-align: center;
+    width: auto;
+    float: right; }
+  .footer__list {
+    list-style: none;
+    float: right; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1rem; }
+  .footer__link {
+    transition: all 0.5s ease;
+    background-color: #444;
+    border-bottom: 0.15rem solid transparent; }
+    .footer__link:link, .footer__link:visited {
+      color: #c4c4c4;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block; }
+    .footer__link:hover, .footer__link:active {
+      transition: all 0.5s ease;
+      color: #c56461;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+      transform: scale(1.1) translateY(-0.2rem);
+      border-bottom: 0.15rem solid #c56461; }
+      .footer__link:hover:active, .footer__link:active:active {
+        transform: translateY(0); }
 
 .section-about {
   background-color: #eeeaf5;

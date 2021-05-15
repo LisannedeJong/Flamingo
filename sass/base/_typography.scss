@@ -2,21 +2,22 @@
   color: $color-light;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 
   .primary {
     &--main {
       display: block;
-      font-size: 2rem;
+      font-size: $font-medium;
       font-weight: 400;
       letter-spacing: 1.2rem;
       animation-name: moveInLeft;
       animation-duration: 2s;
       animation-timing-function: ease-out;
+      margin-bottom: 1rem;
     }
     &--sub {
       display: block;
-      font-size: 1rem;
+      font-size: $def-font;
       font-weight: 400;
       letter-spacing: 1.1rem;
       animation-name: moveInRight;
@@ -80,13 +81,6 @@ body {
   line-height: 1.5;
   background-color: $color-light;
   color: $color-primary-dark;
-}
-
-footer {
-  text-align: center;
-  background-color: $color-primary-light;
-  height: 1.1rem;
-  font-size: 0.7rem;
 }
 
 hr {
