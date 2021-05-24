@@ -7,12 +7,20 @@
   @include respond(tab-port) {
     margin-bottom: 0.6rem;
   }
+
+  @include respond(small-phone) {
+    margin-bottom: 0.2rem;
+  }
 }
 .u-margin-bottom-def {
   margin-bottom: 1.7rem;
 
   @include respond(tab-port) {
     margin-bottom: 0.7rem;
+  }
+
+  @include respond(small-phone) {
+    margin-bottom: 0.3rem;
   }
 }
 
@@ -24,6 +32,10 @@
 
   @include respond(tab-port) {
     margin-bottom: 2.5rem;
+  }
+
+  @include respond(small-phone) {
+    margin-bottom: 1.5rem;
   }
 }
 .u-margin-top {

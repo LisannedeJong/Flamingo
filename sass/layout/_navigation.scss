@@ -73,6 +73,10 @@
     @include center;
     list-style: none;
     text-align: center;
+
+    @include respond(phone) {
+      width: 80%;
+    }
   }
 
   &__item {
@@ -102,6 +106,10 @@
       .span {
         display: inline-block;
         margin: 1rem;
+      }
+
+      @include respond(phone) {
+        background-size: 250%;
       }
     }
 

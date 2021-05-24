@@ -15,11 +15,20 @@
       width: 33.33%;
       box-shadow: $shadow-link;
     }
+
+    @include respond(small-phone) {
+      outline-offset: 0.3rem;
+    }
+
     &--p1 {
       left: 0;
       top: -2rem;
 
       @include respond(tab-port) {
+        top: 0;
+      }
+
+      @include respond(small-phone) {
         top: 0;
       }
     }
@@ -31,6 +40,10 @@
         z-index: 10;
         transform: scale(1.1);
       }
+      @include respond(small-phone) {
+        top: 0;
+        transform: scale(1);
+      }
     }
     &--p3 {
       left: 4rem;
@@ -41,12 +54,23 @@
         z-index: 5;
         transform: scale(1.1);
       }
+      @include respond(small-phone) {
+        top: 0;
+        transform: scale(1);
+      }
     }
     &:hover {
       transform: scale(1.1) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-dark, 0.5);
       z-index: 15;
       outline: 0.7rem solid $color-primary;
+
+      @include respond(small-phone) {
+        transform: scale(1.05) translateY(-0.5rem);
+        box-shadow: 0 1.5rem 2rem rgba($color-dark, 0.5);
+        z-index: 15;
+        outline: 0.3rem solid $color-primary;
+      }
     }
   }
   &:hover &__photo:not(:hover) {

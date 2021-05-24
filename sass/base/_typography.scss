@@ -61,6 +61,10 @@
     font-size: $font-big;
   }
 
+  @include respond(small-phone) {
+    font-size: $def-font;
+  }
+
   &:hover {
     transform: skewY(0.4deg) skewX(1deg) scale(1.05);
     text-shadow: 0.5rem 1rem 2rem rgba($color-primary-dark, 0.3);
@@ -91,6 +95,10 @@
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+
+    @include respond(small-phone) {
+      margin-bottom: 1rem;
+    }
   }
   &--two {
     margin-bottom: 1rem;

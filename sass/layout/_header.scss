@@ -11,6 +11,10 @@
   position: relative;
   border-radius: 1rem 1rem 0 0;
 
+  @include respond(tab-port) {
+    border-radius: 0;
+  }
+
   &__headerbox {
     text-align: center;
     position: relative;
@@ -22,6 +26,7 @@
     position: absolute;
     top: 2rem;
     left: 1.2rem;
+    z-index: 200;
   }
 
   &__logo {
