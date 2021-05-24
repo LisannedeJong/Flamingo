@@ -1,6 +1,10 @@
 .section-about {
   background-color: darken($color-light, 1.2);
   padding: 2rem 2rem 4rem;
+
+  @include respond(tab-port) {
+    padding: 1rem 0 8rem;
+  }
 }
 
 .section-features {
@@ -21,17 +25,30 @@
   & > * {
     transform: skewY(4deg);
   }
+
+  @include respond(tab-port) {
+    padding: 5rem 1rem 6rem;
+    height: 100%;
+  }
 }
 
 .section-course {
   background-color: darken($color-light, 1.2);
   padding: 4rem 2rem 3rem 2rem;
   margin-top: -3.5rem;
+
+  @include respond(tab-port) {
+    padding: 4rem 1rem 2rem 1rem;
+    margin-top: -2.5rem;
+  }
 }
 
 .section-stories {
   padding: 1rem 0 5rem;
   position: relative;
+  @include respond(tab-port) {
+    padding: 0.5rem 0 2rem;
+  }
 }
 
 .section-book {
@@ -52,14 +69,39 @@
       transparent 50%
     ),
     url(../IMG/flam3.jpg);
-  background-size: cover;
+  background-size: 100%;
   border-radius: 0.3rem;
   box-shadow: $shadow;
   width: 70%;
-  height: 25rem;
 
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.8) 50%,
+        transparent 50%
+      ),
+      url(../IMG/flam3.jpg);
+    width: 100%;
+    background-size: cover;
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 0%,
+        rgba($color-white, 0.8) 100%
+      ),
+      url(../IMG/flam3.jpg);
+    width: 100%;
+    background-size: cover;
+  }
   &__form {
     width: 50%;
     padding: 1.3rem 2rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 }

@@ -14,6 +14,11 @@
       animation-duration: 2s;
       animation-timing-function: ease-out;
       margin-bottom: 1rem;
+
+      @include respond(phone) {
+        letter-spacing: 0.5rem;
+        font-size: $def-font;
+      }
     }
     &--sub {
       display: block;
@@ -23,12 +28,17 @@
       animation-name: moveInRight;
       animation-duration: 2s;
       animation-timing-function: ease-out;
+
+      @include respond(phone) {
+        letter-spacing: 0.3rem;
+        font-size: $font-small;
+      }
     }
   }
 }
 
 .secundary {
-  font-size: 2.5rem;
+  font-size: $font-large;
   text-transform: uppercase;
   font-weight: 600;
   background-image: linear-gradient(
@@ -42,6 +52,14 @@
   color: transparent;
   transition: all 0.4s;
   letter-spacing: 0.2rem;
+
+  @include respond(tab-port) {
+    font-size: $font-medium;
+  }
+
+  @include respond(phone) {
+    font-size: $font-big;
+  }
 
   &:hover {
     transform: skewY(0.4deg) skewX(1deg) scale(1.05);
@@ -62,6 +80,10 @@
   font-size: $def-font;
   font-weight: 600;
   text-transform: uppercase;
+
+  @include respond(tab-port) {
+    font-size: $font-small;
+  }
 }
 
 .paragraph {
@@ -88,10 +110,6 @@ hr {
   height: 0.2rem;
   background-color: $color-primary-light;
   margin-bottom: 1rem;
-}
-
-html {
-  font-size: 1rem;
 }
 
 .about {

@@ -9,6 +9,16 @@
     background-image: radial-gradient($color-primary-light-2, $color-primary-2);
     z-index: 50;
     transition: all 1s cubic-bezier(0.83, 0, 0.17, 1);
+
+    @include respond(tab-port) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
+
+    @include respond(phone) {
+      top: 2.5rem;
+      right: 2.5rem;
+    }
   }
 
   &__checkbox {
@@ -31,6 +41,16 @@
     z-index: 100;
     box-shadow: $shadow-link;
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 3rem;
+      right: 3rem;
+    }
+
+    @include respond(phone) {
+      top: 2rem;
+      right: 2rem;
+    }
   }
 
   &__nav {

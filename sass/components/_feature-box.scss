@@ -6,8 +6,14 @@
   text-align: center;
   height: 14rem;
   transition: transform 0.3s;
-  width: 14.4vw;
   float: none;
+
+  @include respond(tab-port) {
+    padding: 0.5rem;
+    height: 6rem;
+    width: 30rem;
+    margin: 0 auto;
+  }
 
   &:not(:last-child) {
     margin-right: calc(#{$gutter-horizontal} / 4);
@@ -24,7 +30,20 @@
       $color-primary-dark
     );
     display: inline-block;
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) {
+      font-size: $def-font;
+    }
+  }
+
+  &__text {
+    font-size: $font-small;
+
+    @include respond(tab-port) {
+      font-size: $font-mini;
+    }
   }
 }
