@@ -104,13 +104,15 @@ html {
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.4s;
-  letter-spacing: 0.2rem; }
+  letter-spacing: 0.2rem;
+  padding-top: 2rem; }
   @media (max-width: 56.25em) {
     .secundary {
       font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .secundary {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      padding-top: 0.5rem; } }
   @media (max-width: 28.125em) {
     .secundary {
       font-size: 1.6rem; } }
@@ -321,6 +323,9 @@ hr {
     position: absolute;
     bottom: 19rem;
     right: 0.7rem; }
+    @media (max-width: 56.25em) {
+      .card__heading {
+        bottom: 18rem; } }
   .card__heading-span {
     padding: 0 0.5rem; }
     .card__heading-span--1 {

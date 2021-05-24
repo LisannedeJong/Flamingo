@@ -91,6 +91,10 @@
     position: absolute;
     bottom: 19rem;
     right: 0.7rem;
+
+    @include respond(tab-port) {
+      bottom: 18rem;
+    }
   }
   &__heading-span {
     padding: 0 0.5rem;

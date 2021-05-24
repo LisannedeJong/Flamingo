@@ -52,6 +52,7 @@
   color: transparent;
   transition: all 0.4s;
   letter-spacing: 0.2rem;
+  padding-top: 2rem;
 
   @include respond(tab-port) {
     font-size: $font-medium;
@@ -59,6 +60,7 @@
 
   @include respond(phone) {
     font-size: $font-big;
+    padding-top: 0.5rem;
   }
 
   @include respond(small-phone) {
